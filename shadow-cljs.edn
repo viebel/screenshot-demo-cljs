@@ -1,0 +1,11 @@
+{:source-paths
+ ["src"]
+
+ :dependencies
+ [[cider/cider-nrepl "0.24.0"]]
+
+ :builds
+ {:app {:target :node-script
+        :compiler-options {:warnings-as-errors false}
+        :main screenshot-demo.core/main
+        :output-to "out/app/script.js"}}}
